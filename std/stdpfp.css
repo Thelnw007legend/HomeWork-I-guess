@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #1a1a1a, #3e004e, #000);
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #61008ec5;
+    text-shadow: 2px 2px 5px #3b3636;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    color: #bb18ae;
+    text-shadow: 1px 1px 3px #982d96;
+    border-bottom: 2px solid #ae32a6;
+    padding-bottom: 5px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
