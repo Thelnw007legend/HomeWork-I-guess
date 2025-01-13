@@ -1,6 +1,10 @@
-1,Robert
-2,Bill
-3,Valentia
-4,YoMama
-5,Wesker
-6,Kakarot
+1 Robert
+2 Bill
+3 Valentia
+4 YoMama
+5 Wesker
+6 Kakarot
+7 Sukuna
+8 Satoru
+9 Cid
+10 Aijou
