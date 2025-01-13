@@ -1,41 +1,31 @@
-/* General Styling */
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; /* Light azure background */
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 /* Center Content */
 center {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-/* Result Styling */
-.result {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #ffffff; /* White background */
-    border: 2px solid #007BFF; /* Blue border */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    width: 50%;
-    text-align: left;
+/* Styling for Results */
+p.name {
+    font-size: 1.8em; /* Make names larger */
+    font-weight: bold; /* Bold the text */
     color: #1d3557; /* Navy blue */
-    font-size: 1.2em;
+    margin: 15px 0; /* Add spacing between lines */
+    text-align: left; /* Left-align the text */
 }
 
-/* Line Styling */
-.result p {
-    font-size: 1.6em; /* Bigger text for names */
-    font-weight: bold; /* Bold text */
-    margin: 10px 0; /* Spacing between lines */
-    color: #1d3557;
-}
-
-/* Number Styling */
-.result p .number {
-    color: #007BFF; /* Blue for numbers */
-    margin-right: 10px; /* Space between number and name */
+/* Styling for the numbering */
+p.name::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* Adjust the width to make it space for numbers */
+    text-align: right;
+    margin-right: 15px; /* Adjust the margin for spacing between number and name */
 }

@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="NameCss.css">
     <meta charset="UTF-8">
     <title>Firstname to Nickname</title>
+    <link rel="stylesheet" type="text/css" href="NameCss.css">
 </head>
 <body>
 <center>
     <?php
     if (isset($_POST['submit'])) {
         $fname = $_POST['filename'];
+        $index = 1; // Initialize the counter
 
         if (file_exists($fname)) {
             $text = file($fname);
             foreach ($text as $line) {
-                $col = 1; // รีเซ็ตตัวนับคอลัมน์ใหม่สำหรับแต่ละแถว
-                $array_word = explode(" ", $line); // แยกข้อมูลตามช่องว่าง
+                $col = 1; // Reset column count for each row
+                $array_word = explode(" ", $line);
 
                 foreach ($array_word as $value) {
-                    $value = trim($value); // ตัดช่องว่างออก
+                    $value = trim($value); // Trim spaces
 
                     if ($col == 1) {
-                        echo ($value); // แสดงคอลัมน์แรก
+                        echo "<p class='name'>$index. "; // Display the number first
+                        $index++; // Increment the index for the next name
                     } else {
-                        // เริ่มเงื่อนไข if-else สำหรับการจับคู่ชื่อและนามแฝง
+                        // Check for nickname matches
                         if ($value == "Robert") {
-                            echo " Dick";
+                            echo "Dick";
                         } elseif ($value == "Dick") {
-                            echo " Robert";
+                            echo "Robert";
                         } elseif ($value == "Bill") {
-                            echo " William";
+                            echo "William";
                         } elseif ($value == "William") {
-                            echo " Bill";
+                            echo "Bill";
                         } elseif ($value == "Valentia") {
-                            echo " Jill";
+                            echo "Jill";
                         } elseif ($value == "Jill") {
-                            echo " Valentia";
+                            echo "Valentia";
                         } elseif ($value == "YoMama") {
-                            echo " SoGood";
+                            echo "SoGood";
                         } elseif ($value == "SoGood") {
-                            echo " YoMama";
+                            echo "YoMama";
                         } elseif ($value == "Wesker") {
-                            echo " Albert";
+                            echo "Albert";
                         } elseif ($value == "Albert") {
-                            echo " Wesker";
+                            echo "Wesker";
                         } elseif ($value == "Kakarot") {
-                            echo " Goku";
+                            echo "Goku";
                         } elseif ($value == "Goku") {
-                            echo " Kakarot";
+                            echo "Kakarot";
                         } elseif ($value == "Ryomen") {
-                            echo " Sukuna";
+                            echo "Sukuna";
                         } elseif ($value == "Sukuna") {
-                            echo " Ryomen";
+                            echo "Ryomen";
                         } elseif ($value == "Gojo") {
-                            echo " Satoru";
+                            echo "Satoru";
                         } elseif ($value == "Satoru") {
-                            echo " Gojo";
+                            echo "Gojo";
                         } elseif ($value == "Kageno") {
-                            echo " Cid";
+                            echo "Cid";
                         } elseif ($value == "Cid") {
-                            echo " Kageno";
+                            echo "Kageno";
                         } elseif ($value == "Aijou") {
-                            echo " Rentaro";
+                            echo "Rentaro";
                         } elseif ($value == "Rentaro") {
-                            echo " Aijou";
+                            echo "Aijou";
                         } else {
-                            echo " No Match"; // กรณีที่ไม่มีการจับคู่
+                            echo "No Match";
                         }
                     }
-                    $col++; // เพิ่มตัวนับคอลัมน์
+                    $col++;
                 }
-                echo "<br>"; // แยกแถวใหม่
+                echo "</p>"; // End the current row
             }
         } else {
             echo "<p style='color:red;'>File not found. Please check the filename and try again.</p>";
