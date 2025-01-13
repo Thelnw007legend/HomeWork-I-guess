@@ -1,0 +1,41 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light azure background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Center Content */
+center {
+    margin-top: 50px;
+}
+
+/* Result Styling */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* White background */
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 50%;
+    text-align: left;
+    color: #1d3557; /* Navy blue */
+    font-size: 1.2em;
+}
+
+/* Line Styling */
+.result p {
+    font-size: 1.6em; /* Bigger text for names */
+    font-weight: bold; /* Bold text */
+    margin: 10px 0; /* Spacing between lines */
+    color: #1d3557;
+}
+
+/* Number Styling */
+.result p .number {
+    color: #007BFF; /* Blue for numbers */
+    margin-right: 10px; /* Space between number and name */
+}
