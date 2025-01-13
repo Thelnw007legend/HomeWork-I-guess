@@ -18,7 +18,7 @@ p.name {
     font-weight: bold; /* Bold the text */
     color: #1d3557; /* Navy blue */
     margin: 15px 0; /* Add spacing between lines */
-    text-align: left; /* Left-align the text */
+    text-align: center; /* Left-align the text */
 }
 
 /* Styling for the numbering */
