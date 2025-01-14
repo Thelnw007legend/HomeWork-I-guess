@@ -1,7 +1,7 @@
 <html>
 <head><title>แสดงการฟังก์ชั่น fread, fwrite</title></head>
 <body>
-<?
+<?php
 // open file
 $fp = @fopen("Sample.txt" , "r");
 if ($fp) {
