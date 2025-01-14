@@ -10,22 +10,22 @@
     <?php
     if (isset($_POST['submit'])) {
         $fname = $_POST['filename'];
-        $index = 1; // Initialize the counter
+        $index = 1; 
 
         if (file_exists($fname)) {
             $text = file($fname);
             foreach ($text as $line) {
-                $col = 1; // Reset column count for each row
+                $col = 1; 
                 $array_word = explode(" ", $line);
 
                 foreach ($array_word as $value) {
-                    $value = trim($value); // Trim spaces
+                    $value = trim($value); 
 
                     if ($col == 1) {
-                        echo "<p class='name'>$index. "; // Display the number first
-                        $index++; // Increment the index for the next name
+                        echo "<p class='name'>$index. "; 
+                        $index++; 
                     } else {
-                        // Check for nickname matches
+                        
                         if ($value == "Robert") {
                             echo "Dick";
                         } elseif ($value == "Dick") {
@@ -72,7 +72,7 @@
                     }
                     $col++;
                 }
-                echo "</p>"; // End the current row
+                echo "</p>"; 
             }
         } else {
             echo "<p style='color:red;'>File not found. Please check the filename and try again.</p>";
