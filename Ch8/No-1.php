@@ -38,6 +38,9 @@ function Divide($n1,$n2,&$result)
 }
 $num1=10;
 $num2=20;
+$resulDevide=0;
 Divide($num1,$num2,$resulDevide);
 echo "<br><br>Result Devide: ".$resulDevide;
+
+
 ?>
